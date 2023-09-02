@@ -1,0 +1,64 @@
+  body{
+    background-color: #beccd3;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+  .wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 5px;
+  }
+  
+  .wrapper > div {
+    border-radius: 5px;
+    background-color: white;
+    padding: 1em;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  .wrapper .seven{
+    background-color: #580CC6;
+  }
+
+  .one {
+    grid-column: 3 / 6;
+    grid-row: 2 / 3;
+  }
+
+  .two {
+    grid-column: 3 / 4;
+    grid-row: 3 / 6;
+  }
+
+  .three {
+    grid-column: 4 / 6;
+    grid-row: 3 / 5;
+  }
+
+  .four {
+    grid-column: 3 / 4;
+    grid-row: 6 / 8;
+  }
+
+  .five{
+    grid-column: 4 / 6;
+    grid-row: 5 / 8 ;
+  }
+
+  .six{
+    grid-column: 6 / 20;
+    grid-row: 1 / 8;
+  }
+
+  .seven{
+    grid-column: 1 / 3;
+    grid-row: 1 / 8;
+  }
